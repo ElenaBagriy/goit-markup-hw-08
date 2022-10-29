@@ -1,0 +1,28 @@
+.logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-family: Raleway, sans-serif;
+    @include font(24px, 700, 28.18px);
+    letter-spacing: 0.03em;
+    color: #000000;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        @include font(26px, 700, 30.52px);
+    }
+}
+
+.logo__contrast {
+    color: var(--accent-color);
+}
+
+.logo--footer {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 0;
+    color: #ffffff;
+}

@@ -1,0 +1,14 @@
+.page-header {
+    border-bottom: 1px solid #ececec;
+    @include font(14px, 500, 16.41px);
+}
+
+.page-header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and(min-width: 1200px) {
+        justify-content: flex-start;
+    }
+}

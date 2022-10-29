@@ -1,0 +1,37 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    padding-top: 93px;
+    padding-bottom: 94px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    background-color: rgba(0, 0, 0, 0.2);
+
+    transition: opacity var(--transition-dure-and-function), transform var(--transition-dure-and-function), visibility var(--transition-dure-and-function);
+    transform-origin: bottom center;
+    overflow-y: scroll;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 208px;
+        padding-bottom: 207px;
+        padding-left: 159px;
+        padding-right: 159px;   
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 0;
+        overflow: hidden;
+        }
+}
+
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0);
+}

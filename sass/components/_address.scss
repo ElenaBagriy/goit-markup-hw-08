@@ -1,0 +1,30 @@
+.address__list {
+    font-style: normal;
+}
+
+.address__item:not(:last-child) {
+    display: block;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 9px;
+    }
+}
+.address__link {
+    @include font();
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+
+    transition: color var(--transition-dure-and-function);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+.address__link--bold {
+    letter-spacing: 0.03em;
+    color: var(--banner-text-color);
+}
+
+

@@ -1,0 +1,21 @@
+.mobile-site-nav__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.mobile-site-nav__link {
+    display: block;
+    @include font(40px, 500, 46.88px);
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+
+    transition: color var(--transition-dure-and-function);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.mobile-site-nav__link--current {
+    color: var(--accent-color);
+}

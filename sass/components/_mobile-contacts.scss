@@ -1,0 +1,27 @@
+.mobile-contacts__item:first-child {
+    margin-bottom: 32px;
+}
+
+.mobile-contacts__link {
+    display: block;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.17;
+}
+
+.mobile-contacts__link--big-blue {
+    font-size: 34px;
+    color: var(--accent-color);
+}
+
+.mobile-contacts__link--little-grey {
+    font-size: 24px;
+    color: var(--primary-text-color);
+
+    transition: color var(--transition-dure-and-function);
+        
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
