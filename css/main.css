@@ -110,15 +110,15 @@ a {
     display: none;
   }
 }
+@media screen and (min-width: 1200px) {
+  .site-nav {
+    margin-left: 93px;
+  }
+}
 
 .site-nav__list {
   display: flex;
   column-gap: 50px;
-}
-@media screen and (min-width: 1200px) {
-  .site-nav__list {
-    margin-left: 93px;
-  }
 }
 
 .site-nav__link {
@@ -552,12 +552,10 @@ a {
   overflow: hidden;
 }
 
-@media screen and (min-width: 768px) {
-  .features {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
-  }
+.features {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .features__item {
@@ -632,14 +630,9 @@ a {
 }
 
 .team {
-  display: block;
-}
-@media screen and (min-width: 768px) {
-  .team {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 @media screen and (min-width: 1200px) {
   .team {
@@ -735,17 +728,17 @@ a {
 }
 
 .clients__item {
-  width: 210px;
+  width: calc((100% - 30px) / 2);
   height: 92px;
 }
 @media screen and (min-width: 768px) {
   .clients__item {
-    width: 226px;
+    width: calc((100% - 60px) / 3);
   }
 }
 @media screen and (min-width: 1200px) {
   .clients__item {
-    width: 170px;
+    width: calc((100% - 150px) / 6);
   }
 }
 
