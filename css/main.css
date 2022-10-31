@@ -1154,7 +1154,9 @@ a {
 }
 
 .portfolio-list__link {
-  display: block;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   color: inherit;
   transition: box-shadow var(--transition-dure-and-function);
@@ -1202,20 +1204,22 @@ a {
 }
 
 .portfolio-list__item {
-  width: 450px;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .portfolio-list__item {
-    width: 354px;
+    width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .portfolio-list__item {
-    width: 370px;
+    width: calc((100% - 60px) / 3);
   }
 }
 
 .portfolio-list__description {
+  flex-grow: 1;
+  height: auto;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
